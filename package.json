@@ -59,7 +59,8 @@
     "reflect-metadata": "0.1.12",
     "rxjs": "6.3.3",
     "rxjs-tslint": "0.1.6",
-    "zone.js": "0.8.26"
+    "zone.js": "0.8.26",
+    "ng-zorro-antd": "7.0.0-rc.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "0.12.1",

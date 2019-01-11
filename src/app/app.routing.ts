@@ -10,7 +10,10 @@ const routes: Routes = [
     component: WrapperComponent,
     canActivateChild: [MetaGuard],
     children: [
-      { path: 'home', loadChildren: './home/home.module#HomeModule' },
+      { 
+        path: 'home', 
+        loadChildren: './home/home.module#HomeModule' 
+      },
       {
         path: 'mock',
         loadChildren: './mock-server-browser/mock-server-browser.module#MockServerBrowserModule',
@@ -20,7 +23,14 @@ const routes: Routes = [
         path: 'static/back',
         loadChildren: './transfer-back/transfer-back.module#TransferBackModule',
       },
-      { path: '**', loadChildren: './not-found/not-found.module#NotFoundModule' },
+      { 
+        path: 'zorrotest', 
+        loadChildren: './zorro-test/zorro-test.module#ZorroTestModule' 
+      },
+      { 
+        path: '**', 
+        loadChildren: './not-found/not-found.module#NotFoundModule'
+      }      
     ],
   },
 ];

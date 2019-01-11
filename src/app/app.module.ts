@@ -14,6 +14,7 @@ import { TranslatesService } from '@shared/translates';
 import { AppRoutes } from './app.routing';
 import { AppComponent } from './app.component';
 import { UniversalStorage } from '@shared/storage/universal.storage';
+import { NgZorroAntdModule, NZ_I18N } from 'ng-zorro-antd';
 
 export function initLanguage(translateService: TranslatesService): Function {
   return (): Promise<any> => translateService.initLanguage();
@@ -29,6 +30,7 @@ export function initLanguage(translateService: TranslatesService): Function {
     BrowserAnimationsModule,
     CookieModule.forRoot(),
     SharedModule.forRoot(),
+    NgZorroAntdModule
   ],
   declarations: [AppComponent],
   providers: [
