@@ -20,7 +20,7 @@
     "build": "ng build",
     "build:server": "ng run universal-demo:server:production",
     "build:prod": "ng build --prod",
-    "build:universal": "ng run universal-demo:build:production && ng run universal-demo:server:production && webpack --progress --colors",
+    "build:universal": "ng run universal-demo:build:production && ng run universal-demo:server:production && ./node_modules/@angular-devkit/build-webpack/node_modules/.bin/webpack --progress --colors",
     "server": "node server.js",
     "test": "ng test",
     "test:ssr": "run-p test:ssr:*",
@@ -51,9 +51,11 @@
     "@ngx-meta/core": "7.0.0",
     "@ngx-translate/core": "11.0.1",
     "@ngx-translate/http-loader": "4.0.0",
-    "ngx-cookie": "4.1.2",
     "cookie-parser": "1.4.3",
     "core-js": "2.6.2",
+    "mime": "^2.4.0",
+    "ngx-cookie": "4.1.2",
+    "node-sass": "^4.11.0",
     "reflect-metadata": "0.1.12",
     "rxjs": "6.3.3",
     "rxjs-tslint": "0.1.6",
@@ -91,7 +93,7 @@
     "ts-node": "7.0.1",
     "tslint": "5.12.0",
     "typescript": "3.2.2",
-    "webpack-cli": "3.2.1",
+    "webpack-cli": "^3.2.1",
     "webpack-node-externals": "1.7.2"
   }
 }
